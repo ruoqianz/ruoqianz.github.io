@@ -21,25 +21,27 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.19.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"style":"mac"},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="Reach for the stars">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Allen&#39;s blog">
-<meta property="og:url" content="http://example.com/index.html">
+    <meta name="description" content="Binary searchpre-conditions: no duplicate numbers in the array.Define intervals, the common ones are [left,right] or [left,right).runtime complexity : O(logn)  we define the interval [left, right] whi">
+<meta property="og:type" content="article">
+<meta property="og:title" content="leetcode01">
+<meta property="og:url" content="http://example.com/2024/02/08/leetcode01/index.html">
 <meta property="og:site_name" content="Allen&#39;s blog">
-<meta property="og:description" content="Reach for the stars">
+<meta property="og:description" content="Binary searchpre-conditions: no duplicate numbers in the array.Define intervals, the common ones are [left,right] or [left,right).runtime complexity : O(logn)  we define the interval [left, right] whi">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2024-02-08T21:51:52.000Z">
+<meta property="article:modified_time" content="2024-02-12T16:18:13.025Z">
 <meta property="article:author" content="Allen Zhang">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="http://example.com/">
+<link rel="canonical" href="http://example.com/2024/02/08/leetcode01/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":true,"isPost":false,"lang":"en","comments":"","permalink":"","path":"index.html","title":""}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"http://example.com/2024/02/08/leetcode01/","path":"2024/02/08/leetcode01/","title":"leetcode01"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>Allen's blog</title>
+<title>leetcode01 | Allen's blog</title>
   
 
 
@@ -72,7 +74,7 @@
 
     <a href="/" class="brand" rel="start">
       <i class="logo-line"></i>
-      <h1 class="site-title">Allen's blog</h1>
+      <p class="site-title">Allen's blog</p>
       <i class="logo-line"></i>
     </a>
       <p class="site-subtitle" itemprop="description">Welcome to my world !</p>
@@ -126,7 +128,7 @@
   
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           Table of Contents
@@ -139,6 +141,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Binary-search"><span class="nav-number">1.</span> <span class="nav-text">Binary search</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#leetcode-35"><span class="nav-number">1.1.</span> <span class="nav-text">leetcode 35</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#leetcode-34"><span class="nav-number">1.2.</span> <span class="nav-text">leetcode 34</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#leetcode-34-1"><span class="nav-number">1.3.</span> <span class="nav-text">leetcode 34</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#leetcode-167"><span class="nav-number">1.4.</span> <span class="nav-text">leetcode 167</span></a></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -210,143 +213,17 @@
 
     </div>
 
-    <div class="main-inner index posts-expand">
+    <div class="main-inner post posts-expand">
 
-    
+
+  
 
 
 <div class="post-block">
   
   
 
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2024/02/13/leetcode02/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Allen Zhang">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Allen's blog">
-      <meta itemprop="description" content="Reach for the stars">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Allen's blog">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2024/02/13/leetcode02/" class="post-title-link" itemprop="url">leetcode02</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-      
-
-      <time title="Created: 2024-02-13 01:05:01 / Modified: 01:35:29" itemprop="dateCreated datePublished" datetime="2024-02-13T01:05:01+00:00">2024-02-13</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/Leetcode/" itemprop="url" rel="index"><span itemprop="name">Leetcode</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h3 id="Sliding-Window"><a href="#Sliding-Window" class="headerlink" title="Sliding Window"></a>Sliding Window</h3><p>Sliding Window is the type of double pointers, by adjusting constantly the start and end position of our window to get the final answer. O(n)</p>
-<h2 id="leetcode-904-Fruit-Into-Baskets"><a href="#leetcode-904-Fruit-Into-Baskets" class="headerlink" title="leetcode 904. Fruit Into Baskets"></a>leetcode 904. Fruit Into Baskets</h2><p>You are visiting a farm that has a single row of fruit trees arranged from left to right. The trees are represented by an integer array where is the type of fruit the tree produces.fruitsfruits[i]ith</p>
-<p>You want to collect as much fruit as possible. However, the owner has some strict rules that you must follow:</p>
-<p>You only have two baskets, and each basket can only hold a single type of fruit. There is no limit on the amount of fruit each basket can hold.<br>Starting from any tree of your choice, you must pick exactly one fruit from every tree (including the start tree) while moving to the right. The picked fruits must fit in one of your baskets.<br>Once you reach a tree with fruit that cannot fit in your baskets, you must stop.<br>Given the integer array , return the maximum number of fruits you can pick</p>
-<p>reasoning:</p>
-<p>There are three questions we need to solve first：</p>
-<ol>
-<li>What is window in this question?</li>
-</ol>
-<p>Obviously, the fruits which can be collected on the baskets will be the window </p>
-<ol start="2">
-<li>How to move the end of the window?</li>
-</ol>
-<p>By observing the question, we can conclude that only two baskets which means only two distinct number can appear on this window. So the end of window will change when we find some number which is not on the window.<br>3. How to mover the start of the window?</p>
-<p>We have known how to move the end of the window, and only two distinct number can appear on this window, So we can make sure that the position (end - 1) must be in the new window and different from the end one. So we put these two numbers to a list and use for loop from end to 0 to find the first number that do not in the list.</p>
-<ol start="4">
-<li>How to update the result</li>
-</ol>
-<p>We define that if end - start &#x3D;&#x3D; result and fruits[end] in baskets then result +&#x3D; 1 because, when end - start &#x3D;&#x3D; result, this window must be the best window at this time so if we broaden the window we must update the result the same time. </p>
-<pre><code>def totalFruit(self, fruits: List[int]) -&gt; int:
-    blanket = []
-    start = 0
-    result = 0
-    for end in range(0, len(fruits)):
-        if(fruits[end] not in blanket and len(blanket) &lt; 2):
-            blanket.append(fruits[end])
-        elif(fruits[end] in blanket and end - start == result):
-            result += 1         
-        if(fruits[end] not in blanket):
-            result = max(result, end - start)                                  
-            blanket[0] = fruits[end - 1]
-            blanket[1] = fruits[end]
-            start = end
-            while(fruits[start - 1] in blanket):              
-                start -= 1
-
-    if(result == 0 ):
-        return len(fruits)
-    return result
-       
-        
-     
-
-    
-</code></pre>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-   <div>
-  
-   </div>
-
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
     <link itemprop="mainEntityOfPage" href="http://example.com/2024/02/08/leetcode01/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -360,13 +237,13 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Allen's blog">
+      <meta itemprop="name" content="leetcode01 | Allen's blog">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2024/02/08/leetcode01/" class="post-title-link" itemprop="url">leetcode01</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          leetcode01
+        </h1>
 
         <div class="post-meta-container">
           <div class="post-meta">
@@ -396,6 +273,13 @@
     </span>
 
   
+    <span class="post-meta-item" title="Views" id="busuanzi_container_page_pv">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">Views: </span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
 </div>
 
         </div>
@@ -404,8 +288,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
-          <h2 id="Binary-search"><a href="#Binary-search" class="headerlink" title="Binary search"></a>Binary search</h2><p>pre-conditions: no duplicate numbers in the array.<br>Define intervals, the common ones are [left,right] or [left,right).<br>runtime complexity : O(logn)</p>
+    <div class="post-body" itemprop="articleBody"><h2 id="Binary-search"><a href="#Binary-search" class="headerlink" title="Binary search"></a>Binary search</h2><p>pre-conditions: no duplicate numbers in the array.<br>Define intervals, the common ones are [left,right] or [left,right).<br>runtime complexity : O(logn)</p>
 <ol>
 <li>we define the interval [left, right] which means if the middle is not equal to the target, it can’t be included in next interval. Because our interval [left, right] means the target can be left or right. And if the left is greater than right we break the loop. </li>
 <li>we define the interval [left, right) which means if the middle is greater than the target, the next interval’s right will update to middle and if the middle is smaller than the target, the next interval’s left will update to middle + 1.If left &#x3D;&#x3D; right we will break the loop. Because our interval [left, right) means the target can be left but right.</li>
@@ -501,7 +384,6 @@
     return False
 </code></pre>
 
-      
     </div>
 
     
@@ -509,9 +391,29 @@
     
 
     <footer class="post-footer">
-        <div class="post-eof"></div>
-      
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2024/02/08/title/" rel="prev" title="Allen's study Blog">
+                  <i class="fa fa-angle-left"></i> Allen's study Blog
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2024/02/13/leetcode02/" rel="next" title="leetcode02">
+                  leetcode02 <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
    <div>
+  
+    <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------已经到底啦！<i class="fa fa-paw"></i>-------------</div>
+    
+</div>
+
   
    </div>
 
@@ -519,79 +421,6 @@
   </article>
 </div>
 
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2024/02/08/title/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Allen Zhang">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Allen's blog">
-      <meta itemprop="description" content="Reach for the stars">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Allen's blog">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2024/02/08/title/" class="post-title-link" itemprop="url">Allen's study Blog</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-      
-
-      <time title="Created: 2024-02-08 16:55:39 / Modified: 21:35:37" itemprop="dateCreated datePublished" datetime="2024-02-08T16:55:39+00:00">2024-02-08</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>Welcome to my Blog! </p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-   <div>
-  
-   </div>
-
-    </footer>
-  </article>
-</div>
 
 
 
